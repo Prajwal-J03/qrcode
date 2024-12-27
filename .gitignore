@@ -1,0 +1,16 @@
+node_modules/
+
+.log
+
+.env
+
+package-lock.json
+
+Thumbs.db
+
+build/
+dist/
+
+.vscode
+
+yarn.lock
