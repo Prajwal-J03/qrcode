@@ -8,17 +8,13 @@
     </head>
     <body class="h-screen flex items-center justify-center">
         <h2 class="font-semibold text-4xl absolute top-10 left-10">QR Code Gen</h2>
-        <div class="border-2 border-gray-100 shadow-[0px_0px_63px_-8px_rgba(0,_0,_0,_0.1)] rounded-3xl flex items-center justify-around w-3/5 h-3/5 ">
-            <div class="w-2/5 h-4/5 py-24 flex flex-col items-center justify-around">
-                <p class="text-xl font-semibold">Enter text, urls or links...</p>
-                <input id="inputText" type="text" placeholder="ex: https://www.example.com" class="border-[1.5px] border-gray-400 px-5 py-3 w-3/4 rounded-xl">
-                <button id="generate" class="bg-sky-400 px-5 py-3 rounded-xl text-white w-3/4 hover:shadow-cyan-100 hover:shadow-lg">Submit</button>
-            </div>
-            <div class="w-2/5 h-4/5 flex flex-col items-center justify-around">
-                <p class="text-xl font-medium">Here's the QR Code</p>
-                <div id="qrcode" class="w-4/5 h-4/5 border-2 border-black rounded-xl flex items-center justify-center">
-                    <canvas id="canvas"></canvas>
-                </div>
+        <div class="absolute top-32 flex h-4/5 w-4/5 flex-col items-center justify-around rounded-3xl border-2 border-gray-100 shadow-[0px_0px_63px_-8px_rgba(0,_0,_0,_0.1)]">
+            <p class="text-lg font-semibold">Enter text, URLs or links...</p>
+            <input id="inputText" type="text" placeholder="ex: https://www.example.com" class="w-4/5 rounded-xl border-[1.5px] border-gray-400 px-4 py-2" />
+            <button id="generate" class="w-4/5 rounded-xl bg-sky-400 px-4 py-2 text-white hover:shadow-lg hover:shadow-cyan-100">Submit</button>
+            <p class="text-lg font-semibold">Here's the QR Code</p>
+            <div id="qrcode" class="flex h-3/5 w-4/5 items-center justify-center rounded-xl border-2 border-black">
+                <canvas id="canvas"></canvas>
             </div>
         </div>
         <script>
