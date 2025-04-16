@@ -1,2 +1,2 @@
 # qrcode
-QR Code Generator using Tailwind CSS
+QR Code Generator using Vite + React and Tailwind CSS
